@@ -1,0 +1,22 @@
+.data
+.code	
+ 	ldi 7 0x0123 
+	ldi 0 0x0bbc	
+	ldi 1 isr1_keypad
+	st 0 1
+	ldi 0 0x0bbb
+	ldi 1 isr_timer
+	st 0 1
+	sti
+	idle
+	jmp idle
+
+isr1_keypad
+	ldi 2 0x00fe
+	ld 4 2
+	iret
+
+isr_timer
+	ldi 3 0x00ff
+	ld 5 3
+	iret
