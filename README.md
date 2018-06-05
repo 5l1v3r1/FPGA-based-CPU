@@ -1,5 +1,5 @@
 # FPGA-based-CPU
-A CPU that work interrups
+A CPU that works interrups.
 
 This project prints time and entered letter that comes from ps2 keyboard to 7-segment displays.
 
